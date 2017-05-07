@@ -1,0 +1,3 @@
+rootProject.name = 'DropIt_Mobile'
+
+include ':app'

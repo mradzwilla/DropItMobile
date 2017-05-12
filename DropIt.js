@@ -3,7 +3,6 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  AsyncStorage,
   View
 } from 'react-native';
 import MapView from 'react-native-maps';
@@ -12,15 +11,12 @@ export default class DropIt extends Component {
 constructor(props){
 	super(props);
 	this.state = {
-	  region: { 
-	  	    latitude: 40.642625,
-          	longitude: -74.014391,
-          	latitudeDelta: 0.092,
-	    	longitudeDelta: 0.0621,
+	  region: { null },
+      isLoaded: false
   	}
-}
 this.onRegionChange = this.onRegionChange.bind(this)
 this.setState = this.setState.bind(this)
+this._getCoordinates = this._getCoordinates.bind(this)
 }
 
 onRegionChange(region) {
@@ -30,28 +26,47 @@ onRegionChange(region) {
 componentWillMount() {
 	this._getCoordinates()
 }
-
-
+componentDidMount() {
+	this.setState({ isLoaded: true })
+}
 _getCoordinates(){
     navigator.geolocation.getCurrentPosition(
       (initialPosition) => {
-      	console.log(initialPosition.coords.latitude)
-      	return initialPosition
+      	var newCoords = initialPosition
+      	var newRegion = { 
+		  	    latitude: initialPosition.coords.latitude,
+	          	longitude: initialPosition.coords.longitude,
+	          	latitudeDelta: 0.192,
+		    	longitudeDelta: 0.1621
+		   	}
+      this.setState({ region: newRegion});
+      console.log(newCoords)
+      console.log(this.state.region)
       },
       (error) => {alert(error.message)},
-      {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000}
+      {timeout: 20000, maximumAge: 1000}
     );
 }
 
-render() {
-  return (
-    <MapView
-      region={this.state.region}
-      onRegionChange={this.onRegionChange}
-      style = {{flex:1}}
-    />
-  );
-}
+  renderMap() {
+    if (this.state.isLoaded) {
+      return (
+        <MapView
+          initialRegion={this.state.region}
+        >
+        </MapView>
+      )
+    }
+    return (
+      <Text>Loading...</Text>
+    )
+  }
+
+  render() {
+    return (
+      this.renderMap()
+    )
+  }
 }
 
 const styles = StyleSheet.create({
@@ -61,14 +76,20 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+  map: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+  mapContainer: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
   },
 });

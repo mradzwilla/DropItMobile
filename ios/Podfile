@@ -1,0 +1,33 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'DropIt_Mobile' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for DropIt_Mobile
+
+  target 'DropIt_Mobile-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'DropIt_MobileTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'DropIt_Mobile-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for DropIt_Mobile-tvOS
+
+  target 'DropIt_Mobile-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

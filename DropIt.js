@@ -8,65 +8,89 @@ import {
 import MapView from 'react-native-maps';
 
 export default class DropIt extends Component {
-constructor(props){
-	super(props);
-	this.state = {
-	  region: { null },
-      isLoaded: false
-  	}
-this.onRegionChange = this.onRegionChange.bind(this)
-this.setState = this.setState.bind(this)
-this._getCoordinates = this._getCoordinates.bind(this)
-}
+	constructor(props){
+		super(props);
+		this.state = {
+	      region: {
+	        latitude: 52,
+	        longitude: 5,
+	        latitudeDelta: 0.0922,
+	        longitudeDelta: 0.0421
+	      }
+	  	}
+	  	this.onRegionChange = this.onRegionChange.bind(this);
+		this.setState = this.setState.bind(this);
+		this._updatePosition = this._updatePosition.bind(this)
+	}
 
-onRegionChange(region) {
-  this.setState({ region });
-}
+	onRegionChange(region) {
+		this.setState({ region });
+	}
 
-componentWillMount() {
-	this._getCoordinates()
-}
+	componentWillMount() {
+		// this._getCoordinates()
+		// setInterval(this.render(), 7000);
+	}
+	componentDidUpdate(){
+	}
+	_updatePosition(){
+
+	}
 componentDidMount() {
-	this.setState({ isLoaded: true })
-}
-_getCoordinates(){
     navigator.geolocation.getCurrentPosition(
-      (initialPosition) => {
-      	var newCoords = initialPosition
-      	var newRegion = { 
-		  	    latitude: initialPosition.coords.latitude,
-	          	longitude: initialPosition.coords.longitude,
-	          	latitudeDelta: 0.192,
-		    	longitudeDelta: 0.1621
-		   	}
-      this.setState({ region: newRegion});
-      console.log(newCoords)
-      console.log(this.state.region)
+      (position) => {
+        this.setState({
+          region: {
+            latitude: position.coords.latitude,
+            longitude: position.coords.longitude,
+            latitudeDelta: 0.01,
+            longitudeDelta: 0.0011
+          }
+        });
       },
-      (error) => {alert(error.message)},
-      {timeout: 20000, maximumAge: 1000}
+      (error) => alert(JSON.stringify(error)),
+      {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000}
     );
-}
-
-  renderMap() {
-    if (this.state.isLoaded) {
-      return (
-        <MapView
-          initialRegion={this.state.region}
-        >
-        </MapView>
-      )
-    }
-    return (
-      <Text>Loading...</Text>
-    )
   }
+		// _getCoordinates(){
+		//     navigator.geolocation.getCurrentPosition(
+		//       (initialPosition) => {
+		//       	var newCoords = initialPosition
+		//       	var newRegion = { 
+		// 		  	    latitude: initialPosition.coords.latitude,
+		// 	          	longitude: initialPosition.coords.longitude,
+		// 	          	latitudeDelta: 0.192,
+		// 		    	longitudeDelta: 0.1621
+		// 		   	}
+		//       this.setState({ region: newRegion});
+		//       console.log(newCoords)
+		//       console.log(this.state.region)
+		//       },
+		//       (error) => {alert(error.message)},
+		//       {timeout: 20000, maximumAge: 1000}
+		//     );
+		// }
 
-  render() {
+render() {
     return (
-      this.renderMap()
-    )
-  }
+     <View style={{ flex: 1 }}>
+       <View style={{backgroundColor: 'coral', height: 70, justifyContent: 'center', alignItems: 'center'}}>
+         <Text>
+            <Text>longitude: {this.state.region.longitude}</Text>
+            <Text>latitude: {this.state.region.latitude}</Text>
+        </Text>
+       </View>
+       <View style={styles.container}>
+         <MapView
+           style={styles.map}
+           initialRegion={this.state.region}
+           region={this.state.region}
+           onRegionChange={this.onRegionChange}
+         />
+       </View>
+     </View>
+   );
+ }
 }
 
 const styles = StyleSheet.create({

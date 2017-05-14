@@ -7,11 +7,6 @@ target 'DropIt_Mobile' do
 
   # Pods for DropIt_Mobile
 
-  target 'DropIt_Mobile-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
   target 'DropIt_MobileTests' do
     inherit! :search_paths
     # Pods for testing
@@ -31,3 +26,8 @@ target 'DropIt_Mobile-tvOS' do
   end
 
 end
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'DCTAuth', :git => 'https://github.com/danielctull/DCTAuth.git'

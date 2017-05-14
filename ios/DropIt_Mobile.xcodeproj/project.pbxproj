@@ -22,6 +22,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		27BE14731EC8EC2400CAF4F5 /* libOAuthManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BE14581EC8EBAD00CAF4F5 /* libOAuthManager.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -35,7 +36,11 @@
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* DropIt_MobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* DropIt_MobileTests.m */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		6DC3C74EB3AD5D1702AE8B28 /* Pods_DropIt_Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2435BE7DBC6F0358E11FB94A /* Pods_DropIt_Mobile.framework */; };
+		6FF7E862423043FB1EE6CD5D /* Pods_DropIt_Mobile_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19D978A4637C74482955BB3 /* Pods_DropIt_Mobile_tvOS.framework */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		AF319E6D1A09AB2E42D85139 /* Pods_DropIt_MobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98299E3E10243A8F2925228D /* Pods_DropIt_MobileTests.framework */; };
+		DE36366BCF1FE727C63F05A6 /* Pods_DropIt_Mobile_tvOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA97574D8F207333D716D1F /* Pods_DropIt_Mobile_tvOSTests.framework */; };
 		FD08CC38CAA342129300518B /* libAirMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A552AAA7BB9443D93E1457B /* libAirMaps.a */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +114,20 @@
 			proxyType = 2;
 			remoteGlobalIDString = 11FA5C511C4A1296003AC2EE;
 			remoteInfo = AirMaps;
+		};
+		27BE14351EC8EB8600CAF4F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27355C521EC84411006EEE65;
+			remoteInfo = DropIt_Mobile;
+		};
+		27BE14571EC8EBAD00CAF4F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 730EBD59BF8F453B869E3D87 /* OAuthManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D91353961DA7849100AABC96;
+			remoteInfo = OAuthManager;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -248,6 +267,9 @@
 		00E356EE1AD99517003FC87E /* DropIt_MobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropIt_MobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* DropIt_MobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropIt_MobileTests.m; sourceTree = "<group>"; };
+		05B4B3500418C4D43731FA03 /* Pods-DropIt_Mobile-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropIt_Mobile-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DropIt_Mobile-tvOSTests/Pods-DropIt_Mobile-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0799EE81C52A5B4D7A140AA1 /* Pods-DropIt_Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropIt_Mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-DropIt_Mobile/Pods-DropIt_Mobile.release.xcconfig"; sourceTree = "<group>"; };
+		1267D19AA7CF9EE1EFDC9056 /* Pods-DropIt_MobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropIt_MobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DropIt_MobileTests/Pods-DropIt_MobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* DropIt_Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropIt_Mobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -259,12 +281,23 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = DropIt_Mobile/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		1A552AAA7BB9443D93E1457B /* libAirMaps.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAirMaps.a; sourceTree = "<group>"; };
+		2435BE7DBC6F0358E11FB94A /* Pods_DropIt_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DropIt_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27BE14AC1EC8EC8300CAF4F5 /* DropIt_Mobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = DropIt_Mobile.entitlements; path = DropIt_Mobile/DropIt_Mobile.entitlements; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* DropIt_Mobile-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DropIt_Mobile-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* DropIt_Mobile-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DropIt_Mobile-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D9451011FA89B4E6F87CC1F /* Pods-DropIt_Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropIt_Mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DropIt_Mobile/Pods-DropIt_Mobile.debug.xcconfig"; sourceTree = "<group>"; };
+		4EA97574D8F207333D716D1F /* Pods_DropIt_Mobile_tvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DropIt_Mobile_tvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		730EBD59BF8F453B869E3D87 /* OAuthManager.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = OAuthManager.xcodeproj; path = "../node_modules/react-native-oauth/ios/OAuthManager.xcodeproj"; sourceTree = "<group>"; };
+		75824CF7BAEAC1CD00ACDA86 /* Pods-DropIt_Mobile-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropIt_Mobile-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DropIt_Mobile-tvOS/Pods-DropIt_Mobile-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		93450C49DD8B51DB92E7EAD7 /* Pods-DropIt_Mobile-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropIt_Mobile-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DropIt_Mobile-tvOS/Pods-DropIt_Mobile-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		98299E3E10243A8F2925228D /* Pods_DropIt_MobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DropIt_MobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BC2D13916046C4AC8CF67A /* AirMaps.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = AirMaps.xcodeproj; path = "../node_modules/react-native-maps/lib/ios/AirMaps.xcodeproj"; sourceTree = "<group>"; };
+		DC17C4167EA8F81CDD787C39 /* Pods-DropIt_Mobile-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropIt_Mobile-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DropIt_Mobile-tvOSTests/Pods-DropIt_Mobile-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		E19D978A4637C74482955BB3 /* Pods_DropIt_Mobile_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DropIt_Mobile_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7995677547AAE38A1E10FB5 /* Pods-DropIt_MobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropIt_MobileTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DropIt_MobileTests/Pods-DropIt_MobileTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
+				AF319E6D1A09AB2E42D85139 /* Pods_DropIt_MobileTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +314,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27BE14731EC8EC2400CAF4F5 /* libOAuthManager.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
@@ -292,6 +327,7 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				FD08CC38CAA342129300518B /* libAirMaps.a in Frameworks */,
+				6DC3C74EB3AD5D1702AE8B28 /* Pods_DropIt_Mobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +343,7 @@
 				2D02E4C61E0B4AEC006451C7 /* libRCTSettings-tvOS.a in Frameworks */,
 				2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */,
 				2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */,
+				6FF7E862423043FB1EE6CD5D /* Pods_DropIt_Mobile_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +351,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE36366BCF1FE727C63F05A6 /* Pods_DropIt_Mobile_tvOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +388,7 @@
 			children = (
 				00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */,
 				3DAD3E8C1DF850E9000B6D8A /* libRCTNetwork-tvOS.a */,
+				27BE14361EC8EB8600CAF4F5 /* DropIt_Mobile.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -400,6 +439,7 @@
 		13B07FAE1A68108700A75B9A /* DropIt_Mobile */ = {
 			isa = PBXGroup;
 			children = (
+				27BE14AC1EC8EC8300CAF4F5 /* DropIt_Mobile.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -432,6 +472,25 @@
 				273742251EBFD74400CA643C /* libAirMaps.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		27BE14531EC8EBAD00CAF4F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27BE14581EC8EBAD00CAF4F5 /* libOAuthManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33493B003D4634881647706C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2435BE7DBC6F0358E11FB94A /* Pods_DropIt_Mobile.framework */,
+				E19D978A4637C74482955BB3 /* Pods_DropIt_Mobile_tvOS.framework */,
+				4EA97574D8F207333D716D1F /* Pods_DropIt_Mobile_tvOSTests.framework */,
+				98299E3E10243A8F2925228D /* Pods_DropIt_MobileTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
@@ -467,6 +526,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				C3BC2D13916046C4AC8CF67A /* AirMaps.xcodeproj */,
+				730EBD59BF8F453B869E3D87 /* OAuthManager.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -487,6 +547,8 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* DropIt_MobileTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
+				8BEA96030830BE1AAB9BA688 /* Pods */,
+				33493B003D4634881647706C /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -503,6 +565,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		8BEA96030830BE1AAB9BA688 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D9451011FA89B4E6F87CC1F /* Pods-DropIt_Mobile.debug.xcconfig */,
+				0799EE81C52A5B4D7A140AA1 /* Pods-DropIt_Mobile.release.xcconfig */,
+				75824CF7BAEAC1CD00ACDA86 /* Pods-DropIt_Mobile-tvOS.debug.xcconfig */,
+				93450C49DD8B51DB92E7EAD7 /* Pods-DropIt_Mobile-tvOS.release.xcconfig */,
+				05B4B3500418C4D43731FA03 /* Pods-DropIt_Mobile-tvOSTests.debug.xcconfig */,
+				DC17C4167EA8F81CDD787C39 /* Pods-DropIt_Mobile-tvOSTests.release.xcconfig */,
+				1267D19AA7CF9EE1EFDC9056 /* Pods-DropIt_MobileTests.debug.xcconfig */,
+				F7995677547AAE38A1E10FB5 /* Pods-DropIt_MobileTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -510,9 +587,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "DropIt_MobileTests" */;
 			buildPhases = (
+				45BD24B72F5C3FA70107FC1D /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				562D19E7DE726DCE2AFBB280 /* [CP] Embed Pods Frameworks */,
+				825F0D5CD030B55C6AB848B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -528,10 +608,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "DropIt_Mobile" */;
 			buildPhases = (
+				C3329BE31FA59FD4778CBC5E /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				868FE504B83677FEEC320408 /* [CP] Embed Pods Frameworks */,
+				94033D5142161C9A3E9B6F9C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -546,10 +629,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "DropIt_Mobile-tvOS" */;
 			buildPhases = (
+				1087EF8F9A91E5EB1A4277C9 /* [CP] Check Pods Manifest.lock */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
 				2D02E4791E0B4A5D006451C7 /* Resources */,
 				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
+				548A9D1F218D5531538C9187 /* [CP] Embed Pods Frameworks */,
+				238894B01444D02FCBA343F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -564,9 +650,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "DropIt_Mobile-tvOSTests" */;
 			buildPhases = (
+				D571B82D4987BEA0EB40D912 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
+				A9855D47254CA07342CB5E01 /* [CP] Embed Pods Frameworks */,
+				EF0FF1496ED0D104D949104B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -590,6 +679,14 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = MHY37T985C;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -617,6 +714,10 @@
 				{
 					ProductGroup = 273742211EBFD74400CA643C /* Products */;
 					ProjectRef = C3BC2D13916046C4AC8CF67A /* AirMaps.xcodeproj */;
+				},
+				{
+					ProductGroup = 27BE14531EC8EBAD00CAF4F5 /* Products */;
+					ProjectRef = 730EBD59BF8F453B869E3D87 /* OAuthManager.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
@@ -735,6 +836,20 @@
 			fileType = archive.ar;
 			path = libAirMaps.a;
 			remoteRef = 273742241EBFD74400CA643C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27BE14361EC8EB8600CAF4F5 /* DropIt_Mobile.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = DropIt_Mobile.app;
+			remoteRef = 27BE14351EC8EB8600CAF4F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27BE14581EC8EBAD00CAF4F5 /* libOAuthManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOAuthManager.a;
+			remoteRef = 27BE14571EC8EBAD00CAF4F5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */ = {
@@ -907,6 +1022,36 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/packager/react-native-xcode.sh";
 		};
+		1087EF8F9A91E5EB1A4277C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		238894B01444D02FCBA343F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DropIt_Mobile-tvOS/Pods-DropIt_Mobile-tvOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -920,6 +1065,156 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/packager/react-native-xcode.sh";
+		};
+		45BD24B72F5C3FA70107FC1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		548A9D1F218D5531538C9187 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DropIt_Mobile-tvOS/Pods-DropIt_Mobile-tvOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		562D19E7DE726DCE2AFBB280 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DropIt_MobileTests/Pods-DropIt_MobileTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		825F0D5CD030B55C6AB848B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DropIt_MobileTests/Pods-DropIt_MobileTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		868FE504B83677FEEC320408 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DropIt_Mobile/Pods-DropIt_Mobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94033D5142161C9A3E9B6F9C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DropIt_Mobile/Pods-DropIt_Mobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9855D47254CA07342CB5E01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DropIt_Mobile-tvOSTests/Pods-DropIt_Mobile-tvOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3329BE31FA59FD4778CBC5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D571B82D4987BEA0EB40D912 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF0FF1496ED0D104D949104B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DropIt_Mobile-tvOSTests/Pods-DropIt_Mobile-tvOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -988,6 +1283,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1267D19AA7CF9EE1EFDC9056 /* Pods-DropIt_MobileTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -997,6 +1293,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-oauth/ios/OAuthManager",
 				);
 				INFOPLIST_FILE = DropIt_MobileTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1016,12 +1313,14 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7995677547AAE38A1E10FB5 /* Pods-DropIt_MobileTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-oauth/ios/OAuthManager",
 				);
 				INFOPLIST_FILE = DropIt_MobileTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1041,13 +1340,19 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D9451011FA89B4E6F87CC1F /* Pods-DropIt_Mobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DropIt_Mobile/DropIt_Mobile.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = MHY37T985C;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
+					"$(SRCROOT)/../node_modules/react-native/Libraries/LinkingIOS\n",
+					"$(SRCROOT)/../node_modules/react-native-oauth/ios/OAuthManager\n",
+					"$(SRCROOT)/../node_modules/react-native-oauth/ios/OAuthManager",
 				);
 				INFOPLIST_FILE = DropIt_Mobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1063,12 +1368,18 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0799EE81C52A5B4D7A140AA1 /* Pods-DropIt_Mobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DropIt_Mobile/DropIt_Mobile.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MHY37T985C;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
+					"$(SRCROOT)/../node_modules/react-native/Libraries/LinkingIOS\n",
+					"$(SRCROOT)/../node_modules/react-native-oauth/ios/OAuthManager\n",
+					"$(SRCROOT)/../node_modules/react-native-oauth/ios/OAuthManager",
 				);
 				INFOPLIST_FILE = DropIt_Mobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1084,6 +1395,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75824CF7BAEAC1CD00ACDA86 /* Pods-DropIt_Mobile-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1097,6 +1409,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-oauth/ios/OAuthManager",
 				);
 				INFOPLIST_FILE = "DropIt_Mobile-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1118,6 +1431,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93450C49DD8B51DB92E7EAD7 /* Pods-DropIt_Mobile-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1131,6 +1445,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-oauth/ios/OAuthManager",
 				);
 				INFOPLIST_FILE = "DropIt_Mobile-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1152,6 +1467,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05B4B3500418C4D43731FA03 /* Pods-DropIt_Mobile-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1177,6 +1493,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC17C4167EA8F81CDD787C39 /* Pods-DropIt_Mobile-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

@@ -1,0 +1,6 @@
+framework module Pods_DropIt_Mobile_tvOSTests {
+  umbrella header "Pods-DropIt_Mobile-tvOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
